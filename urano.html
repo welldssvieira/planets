@@ -1,14 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planeta Urano</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Planeta urano em 3D</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    #container {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .info {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 5px 12px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      pointer-events: none;
+    }
+  </style>
 </head>
 <body>
-    <h1>Planeta Urano</h1>
-    <div class="sketchfab-embed-wrapper">
-        <iframe title="Urano" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/b89a7d4c0f5147129b7fbac98ce70888/embed"> </iframe>
-    </div>
+  <div id="container">
+    <iframe 
+      allowfullscreen 
+      mozallowfullscreen="true" 
+      webkitallowfullscreen="true" 
+      allow="autoplay; fullscreen; xr-spatial-tracking" 
+      xr-spatial-tracking 
+      execution-while-out-of-viewport 
+      execution-while-not-rendered 
+      web-share 
+      src="https://sketchfab.com/models/b89a7d4c0f5147129b7fbac98ce70888/embed?autostart=1&preload=1&default_quality=hd&max_texture_size=2048&ui_infos=0&ui_hint=1&ui_controls=1">
+    </iframe>
+
+  </div>
 </body>
 </html>
